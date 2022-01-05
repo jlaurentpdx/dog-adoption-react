@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { fetchDogById } from '../../services/dogs';
 
+import './DogDetail.css';
+
 export default function DogDetail(props) {
   const id = props.match.params.id;
   const [loading, setLoading] = useState(true);
@@ -21,9 +23,10 @@ export default function DogDetail(props) {
     <div className="dog-detail">
       <h1>{dog.name}</h1>
       <img src={dog.image} />
-      <p>
-        Meet {dog.name}, the {dog.breed}, age {dog.age}.
-      </p>
+      <h2>
+        Meet {dog.name}, the {dog.breed}
+      </h2>
+      <h3>Age {dog.age}.</h3>
       <p>{dog.bio}</p>
     </div>
   );

@@ -1,0 +1,24 @@
+h1 {
+  color: var(--darker);
+  font-size: 300%;
+  font-family: 'Indie Flower', sans-serif;
+}
+
+h2,
+h3 {
+  color: var(--darker);
+  font-family: 'Karla', sans-serif;
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+p {
+  color: var(--dark);
+  font-family: 'Indie Flower', sans-serif;
+  font-weight: 200;
+  font-size: 1.8rem;
+}

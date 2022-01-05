@@ -17,18 +17,19 @@ export default function DogList() {
     fetchData();
   }, []);
 
-  if (loading) return <h1>Please wait...</h1>;
+  if (loading) return <h1 className="loader">...checking our list of furry friends...</h1>;
 
   return (
-    <>
+    <div className="dog-list">
       {dogs.map((dog) => (
-        <div key={dog.id} className="dog-card">
-          <Link key={dog.id} to={`/dogs/${dog.id}`}>
-            <h2>Meet {dog.name}</h2>
+        <Link key={dog.id} to={`/dogs/${dog.id}`} className="dog-link">
+          <div key={dog.id}>
+            <p>meet</p>
+            <h1>{dog.name}</h1>
             <img src={dog.image} />
-          </Link>
-        </div>
+          </div>
+        </Link>
       ))}
-    </>
+    </div>
   );
 }

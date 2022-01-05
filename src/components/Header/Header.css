@@ -1,0 +1,12 @@
+header > * {
+  color: white;
+  font-family: 'Indie Flower';
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 230%;
+}
+
+header {
+  background-color: var(--darker);
+  padding: 1rem;
+}
