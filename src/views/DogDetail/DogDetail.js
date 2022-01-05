@@ -11,7 +11,6 @@ export default function DogDetail(props) {
   useEffect(() => {
     const fetchData = async () => {
       const data = await fetchDogById(id);
-      console.log(data);
       setDog(data);
       setLoading(false);
     };
