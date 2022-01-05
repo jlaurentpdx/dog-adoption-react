@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter, NavLink, Switch, Route } from 'react-router-dom';
-import Dogs from './views/Dogs';
+import { BrowserRouter, NavLink, Switch, Route, Redirect } from 'react-router-dom';
+import DogList from './views/DogList';
 
 function App() {
   return (
@@ -9,15 +8,10 @@ function App() {
       <div className="App">
         <header>
           <NavLink to="/">Home</NavLink>
-          <NavLink to="/dogs">Dogs</NavLink>
         </header>
         <Switch>
-          <Route exact path="/">
-            <h1>It&apos;s a Doggy Dog World</h1>
-            <p>find your fuzzy companion today!</p>
-          </Route>
-          <Route exact path="/dogs" component={Dogs} />
           <Route path="/dogs/:id" />
+          <Route exact path="/" component={DogList} />
         </Switch>
       </div>
     </BrowserRouter>
