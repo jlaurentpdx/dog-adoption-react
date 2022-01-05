@@ -24,12 +24,9 @@ export default function DogList() {
       {dogs.map((dog) => (
         <div key={dog.id} className="dog-card">
           <Link key={dog.id} to={`/dogs/${dog.id}`}>
-            <h2>{dog.name}</h2>
+            <h2>Meet {dog.name}</h2>
             <img src={dog.image} />
           </Link>
-          <p>
-            Meet {dog.name}, the {dog.breed}. {dog.bio}
-          </p>
         </div>
       ))}
     </>

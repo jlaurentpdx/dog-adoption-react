@@ -16,5 +16,15 @@ export default function DogDetail(props) {
     fetchData();
   }, [id]);
 
-  return <div></div>;
+  if (loading) return <h1>Please wait...</h1>;
+  return (
+    <div className="dog-detail">
+      <h1>{dog.name}</h1>
+      <img src={dog.image} />
+      <p>
+        Meet {dog.name}, the {dog.breed}, age {dog.age}.
+      </p>
+      <p>{dog.bio}</p>
+    </div>
+  );
 }

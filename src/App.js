@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, NavLink, Switch, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import Header from './components/Header/Header';
 import DogList from './views/DogList/DogList';
 import DogDetail from './views/DogDetail/DogDetail';
@@ -12,7 +12,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={DogList} />
           <Route path="/dogs/:id" component={DogDetail} />
-          {/* <Redirect exact from="/dogs" to="/" /> */}
+          <Redirect exact from="/dogs" to="/" />
         </Switch>
       </div>
     </BrowserRouter>
