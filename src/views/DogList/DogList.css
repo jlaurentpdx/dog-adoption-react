@@ -1,0 +1,9 @@
+.dog-card {
+  border: 5px dashed lightblue;
+  margin: 1% 20% 1% 20%;
+}
+
+img {
+  width: 30vw;
+  max-width: 400px;
+}
