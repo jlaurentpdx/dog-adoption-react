@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DogDetail renders an individual dog with details 1`] = `
+<div>
+  <div
+    class="dog-detail"
+  >
+    <h1>
+      Eyes
+    </h1>
+    <img
+      src="https://placedog.net/500?id=22"
+    />
+    <h2>
+      Meet 
+      Eyes
+      , the 
+      Weimaraner Mix
+    </h2>
+    <h3>
+      Age 
+      4
+      .
+    </h3>
+    <p>
+      Gentle giant with eyes that will melt your soul.
+    </p>
+  </div>
+</div>
+`;

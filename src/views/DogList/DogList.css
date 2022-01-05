@@ -1,0 +1,48 @@
+.dog-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1%;
+  align-items: top;
+  justify-content: center;
+}
+
+.dog-link {
+  text-decoration: none;
+  color: var(--darker);
+  border-radius: 10px;
+  margin: 1%;
+  width: 30vw;
+  min-width: 400px;
+  max-width: 500px;
+  line-height: 0.5rem;
+}
+
+.dog-link:hover {
+  color: var(--darker);
+  background-color: var(--lighter);
+}
+
+.loader {
+  font-family: 'Indie Flower', sans-serif;
+  color: var(--darker);
+}
+
+h1 {
+  font-family: 'Indie Flower', sans-serif;
+  text-decoration: none;
+}
+
+img {
+  border-radius: 10px;
+  width: 30vw;
+  min-width: 300px;
+  max-width: 400px;
+  border: 10px double var(--mid);
+}
+
+p {
+  font-family: 'Indie Flower', sans-serif;
+  font-weight: bold;
+  color: var(--dark);
+}
