@@ -17,7 +17,7 @@ export default function DogDetail(props) {
     fetchData();
   }, [id]);
 
-  if (loading) return <h1>Please wait...</h1>;
+  if (loading) return <h1>...getting ready to introduce...</h1>;
   return (
     <div className="dog-detail">
       <h1>{dog.name}</h1>
