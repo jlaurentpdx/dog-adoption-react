@@ -1,11 +1,7 @@
 import { useEffect, useState } from 'react';
 import { fetchDogById } from '../../services/dogs';
-import { Link } from 'react-router-dom';
-import DisplayDetail from '../../components/DisplayDetail/DisplayDetail';
 
-import './DogDetail.css';
-
-export default function DogDetail(props) {
+export default function DogEdit(props) {
   const id = props.match.params.id;
   const [loading, setLoading] = useState(true);
   const [dog, setDog] = useState([]);
@@ -21,10 +17,5 @@ export default function DogDetail(props) {
 
   if (loading) return <h1>...getting ready to introduce...</h1>;
 
-  return (
-    <>
-      <DisplayDetail {...dog} />
-      <Link to={`/dogs/${dog.id}/edit`}>Edit</Link>
-    </>
-  );
+  return <div>This is the dog edit page. You are editing {dog.name}.</div>;
 }
