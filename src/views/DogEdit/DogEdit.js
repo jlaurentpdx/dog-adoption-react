@@ -6,6 +6,7 @@ export default function DogEdit(props) {
   const id = props.match.params.id;
   const [loading, setLoading] = useState(true);
   const [dog, setDog] = useState({});
+  const [message, setMessage] = useState('');
 
   useEffect(() => {
     const fetchData = async () => {
@@ -22,11 +23,16 @@ export default function DogEdit(props) {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    await editDog(dog);
+    try {
+      e.preventDefault();
+      await editDog(dog);
+      setMessage('success');
+    } catch {
+      setMessage('something went wrong, please refresh the page and try again');
+    }
   };
 
-  if (loading) return <h1>...getting ready to introduce...</h1>;
+  if (loading) return <h1>...getting ready to introduce you to...</h1>;
 
-  return <DisplayForm {...dog} upDog={upDog} handleSubmit={handleSubmit} />;
+  return <DisplayForm {...dog} upDog={upDog} message={message} handleSubmit={handleSubmit} />;
 }
