@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { fetchDogById } from '../../services/dogs';
+import DisplayDetail from '../../components/DisplayDetail/DisplayDetail';
 
 import './DogDetail.css';
 
@@ -18,15 +19,6 @@ export default function DogDetail(props) {
   }, [id]);
 
   if (loading) return <h1>...getting ready to introduce...</h1>;
-  return (
-    <div className="dog-detail">
-      <h1>{dog.name}</h1>
-      <img src={dog.image} />
-      <h2>
-        Meet {dog.name}, the {dog.breed}
-      </h2>
-      <h3>Age {dog.age}.</h3>
-      <p>{dog.bio}</p>
-    </div>
-  );
+
+  return <DisplayDetail {...dog} />;
 }
