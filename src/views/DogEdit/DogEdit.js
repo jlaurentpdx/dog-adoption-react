@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { fetchDogById } from '../../services/dogs';
+import DisplayForm from '../../components/DisplayForm/DisplayForm';
 
 export default function DogEdit(props) {
   const id = props.match.params.id;
@@ -17,5 +18,5 @@ export default function DogEdit(props) {
 
   if (loading) return <h1>...getting ready to introduce...</h1>;
 
-  return <div>This is the dog edit page. You are editing {dog.name}.</div>;
+  return <DisplayForm {...dog} />;
 }
