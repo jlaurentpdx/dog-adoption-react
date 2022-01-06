@@ -20,7 +20,7 @@
 
 .dog-link:hover {
   color: var(--darker);
-  background-color: var(--lighter);
+  background-color: var(--light);
 }
 
 .loader {
@@ -38,7 +38,7 @@ img {
   width: 30vw;
   min-width: 300px;
   max-width: 400px;
-  border: 10px double var(--mid);
+  border: 10px double var(--lighter);
 }
 
 p {
