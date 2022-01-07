@@ -9,7 +9,7 @@ exports[`DogDetail renders an individual dog with details 1`] = `
       Sadie
     </h1>
     <img
-      src="https://placedog.net/1000/563?id=52"
+      src="https://placedog.net/400/400/6"
     />
     <h2>
       Meet 
