@@ -4,13 +4,18 @@ export default function DisplayForm({
   age,
   breed,
   image,
+  welcome,
   message,
   upDog,
+  submitText,
   handleSubmit,
 }) {
   return (
     <div>
-      <p>This is the edit page.</p>
+      <p>
+        {welcome}
+        {name}
+      </p>
       <p>{message}</p>
       <form>
         <div className="form-control">
@@ -69,7 +74,7 @@ export default function DisplayForm({
           />
         </div>
         <div className="form-control">
-          <button onClick={handleSubmit}>Save</button>
+          <button onClick={handleSubmit}>{submitText}</button>
         </div>
       </form>
     </div>

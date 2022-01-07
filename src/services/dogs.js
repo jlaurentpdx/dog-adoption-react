@@ -15,7 +15,11 @@ export async function editDog(dog) {
 }
 
 export async function createDog(dog) {
-  const send = await client.from('dogs').insert(dog);
+  const resp = await client.from('dogs').insert(dog);
+  return checkError(resp);
+}
 
-  return checkError(send);
+export async function deleteDogById(id) {
+  const resp = await client.from('dogs').delete().eq('id', id);
+  return checkError(resp);
 }

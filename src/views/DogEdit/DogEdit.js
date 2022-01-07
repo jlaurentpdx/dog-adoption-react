@@ -4,6 +4,8 @@ import { useHistory } from 'react-router-dom';
 import DisplayForm from '../../components/DisplayForm/DisplayForm';
 
 export default function DogEdit(props) {
+  const welcome = 'Editing ';
+  const submitText = 'Save';
   const id = props.match.params.id;
   const history = useHistory();
   const [loading, setLoading] = useState(true);
@@ -39,5 +41,14 @@ export default function DogEdit(props) {
 
   if (loading) return <p>please wait...</p>;
 
-  return <DisplayForm {...dog} upDog={upDog} message={message} handleSubmit={handleSubmit} />;
+  return (
+    <DisplayForm
+      {...dog}
+      welcome={welcome}
+      message={message}
+      upDog={upDog}
+      submitText={submitText}
+      handleSubmit={handleSubmit}
+    />
+  );
 }

@@ -4,6 +4,8 @@ import { createDog } from '../../services/dogs';
 import DisplayForm from '../../components/DisplayForm/DisplayForm';
 
 export default function DogCreate() {
+  const welcome = 'New entry';
+  const submitText = 'Add';
   const history = useHistory();
   const [dog, setDog] = useState({});
   const [message, setMessage] = useState('');
@@ -26,5 +28,13 @@ export default function DogCreate() {
     }
   };
 
-  return <DisplayForm message={message} upDog={upDog} handleSubmit={handleSubmit} />;
+  return (
+    <DisplayForm
+      welcome={welcome}
+      message={message}
+      upDog={upDog}
+      submitText={submitText}
+      handleSubmit={handleSubmit}
+    />
+  );
 }

@@ -36,8 +36,8 @@ h1 {
 img {
   border-radius: 10px;
   width: 30vw;
-  min-width: 300px;
-  max-width: 400px;
+  min-width: 250px;
+  max-width: 350px;
   border: 10px double var(--lighter);
 }
 
