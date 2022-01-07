@@ -5,8 +5,13 @@ import DisplayForm from '../../components/DisplayForm/DisplayForm';
 
 export default function DogCreate() {
   const history = useHistory();
+  const [dog, setDog] = useState({});
   const [message, setMessage] = useState('');
-  const dog = {};
+
+  const upDog = (key, value) => {
+    dog[key] = value;
+    setDog({ ...dog });
+  };
 
   const handleSubmit = async (e) => {
     try {
@@ -21,5 +26,5 @@ export default function DogCreate() {
     }
   };
 
-  return <DisplayForm message={message} handleSubmit={handleSubmit} />;
+  return <DisplayForm message={message} upDog={upDog} handleSubmit={handleSubmit} />;
 }
