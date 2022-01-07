@@ -4,7 +4,8 @@ exports[`DogEdit renders a form to the page with pre-filled data 1`] = `
 <div>
   <div>
     <p>
-      This is the edit page.
+      Editing 
+      Sadie
     </p>
     <p />
     <form>

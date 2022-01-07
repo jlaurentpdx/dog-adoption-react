@@ -4,7 +4,7 @@ exports[`DogCreate should render an empty form 1`] = `
 <div>
   <div>
     <p>
-      This is the edit page.
+      New entry
     </p>
     <p />
     <form>
@@ -71,7 +71,7 @@ exports[`DogCreate should render an empty form 1`] = `
         class="form-control"
       >
         <button>
-          Save
+          Add
         </button>
       </div>
     </form>

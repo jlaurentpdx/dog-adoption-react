@@ -165,22 +165,6 @@ exports[`DogList renders a list of dogs 1`] = `
         />
       </div>
     </a>
-    <a
-      class="dog-link"
-      href="/dogs/11"
-    >
-      <div>
-        <p>
-          meet
-        </p>
-        <h1>
-          Butters
-        </h1>
-        <img
-          src="https://placedog.net/400/400/11"
-        />
-      </div>
-    </a>
   </div>
 </div>
 `;

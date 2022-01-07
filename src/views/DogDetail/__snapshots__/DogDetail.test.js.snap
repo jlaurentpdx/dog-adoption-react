@@ -29,7 +29,12 @@ exports[`DogDetail renders an individual dog with details 1`] = `
   <a
     href="/dogs/6/edit"
   >
-    Edit
+    <button>
+      Edit
+    </button>
   </a>
+  <button>
+    Delete
+  </button>
 </div>
 `;
