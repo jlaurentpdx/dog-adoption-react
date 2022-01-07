@@ -6,6 +6,7 @@ import DogList from './views/DogList/DogList';
 import DogDetail from './views/DogDetail/DogDetail';
 import Error from './views/Error/Error';
 import DogEdit from './views/DogEdit/DogEdit';
+import DogCreate from './views/DogCreate/DogCreate';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/" component={DogList} />
           <Route exact path="/dogs/:id" component={DogDetail} />
           <Route exact path="/dogs/:id/edit" component={DogEdit} />
+          <Route exact path="/admin" component={DogCreate} />
           <Route component={Error} />
         </Switch>
       </div>
