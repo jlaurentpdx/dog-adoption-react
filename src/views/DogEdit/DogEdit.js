@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
 import { fetchDogById, editDog } from '../../services/dogs';
+import { useHistory } from 'react-router-dom';
 import DisplayForm from '../../components/DisplayForm/DisplayForm';
 
 export default function DogEdit(props) {
   const id = props.match.params.id;
+  const history = useHistory();
   const [loading, setLoading] = useState(true);
   const [dog, setDog] = useState({});
   const [message, setMessage] = useState('');
@@ -26,13 +28,16 @@ export default function DogEdit(props) {
     try {
       e.preventDefault();
       await editDog(dog);
-      setMessage('success');
+      setMessage('success! redirecting...');
+      setTimeout(() => {
+        history.goBack();
+      }, 2000);
     } catch {
       setMessage('something went wrong, please refresh the page and try again');
     }
   };
 
-  if (loading) return <h1>...getting ready to introduce you to...</h1>;
+  if (loading) return <p>please wait...</p>;
 
   return <DisplayForm {...dog} upDog={upDog} message={message} handleSubmit={handleSubmit} />;
 }

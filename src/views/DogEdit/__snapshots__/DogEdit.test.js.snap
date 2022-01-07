@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DogEdit renders a form to the page with pre-filled data 1`] = `
+<div>
+  <div>
+    <p>
+      This is the edit page.
+    </p>
+    <p />
+    <form>
+      <div
+        class="form-control"
+      >
+        <label>
+          Name: 
+        </label>
+        <input
+          placeholder="enter name"
+          type="text"
+          value="Sadie"
+        />
+      </div>
+      <div
+        class="form-control"
+      >
+        <label>
+          Description: 
+        </label>
+        <textarea
+          placeholder="Who is this dog?"
+          type="text"
+        >
+          When she's not busy being your admirer, Sadie likes to curl up and take a nap. Great with kids and other mellow pets!
+        </textarea>
+      </div>
+      <div
+        class="form-control"
+      >
+        <label>
+          Age: 
+        </label>
+        <input
+          placeholder="enter age in years"
+          type="number"
+          value="10"
+        />
+      </div>
+      <div
+        class="form-control"
+      >
+        <label>
+          Image: 
+        </label>
+        <input
+          placeholder="enter URL"
+          type="text"
+          value="https://placedog.net/1000/563?id=52"
+        />
+      </div>
+      <div
+        class="form-control"
+      >
+        <label>
+          Breed: 
+        </label>
+        <input
+          placeholder="enter breed or mix"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="form-control"
+      >
+        <button>
+          Save
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;

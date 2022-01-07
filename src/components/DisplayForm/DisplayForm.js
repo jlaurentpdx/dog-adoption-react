@@ -16,7 +16,7 @@ export default function DisplayForm({
         <div className="form-control">
           <label>Name: </label>
           <input
-            placeholder="Enter name (required)"
+            placeholder="enter name"
             type="text"
             value={name}
             onChange={(e) => {
