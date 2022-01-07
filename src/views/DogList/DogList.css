@@ -20,7 +20,7 @@
 
 .dog-link:hover {
   color: var(--darker);
-  background-color: var(--lighter);
+  background-color: var(--light);
 }
 
 .loader {
@@ -36,9 +36,9 @@ h1 {
 img {
   border-radius: 10px;
   width: 30vw;
-  min-width: 300px;
-  max-width: 400px;
-  border: 10px double var(--mid);
+  min-width: 250px;
+  max-width: 350px;
+  border: 10px double var(--lighter);
 }
 
 p {

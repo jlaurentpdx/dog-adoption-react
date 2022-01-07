@@ -6,25 +6,35 @@ exports[`DogDetail renders an individual dog with details 1`] = `
     class="dog-detail"
   >
     <h1>
-      Eyes
+      Sadie
     </h1>
     <img
-      src="https://placedog.net/500?id=22"
+      src="https://placedog.net/400/400/6"
     />
     <h2>
       Meet 
-      Eyes
+      Sadie
       , the 
-      Weimaraner Mix
+      
     </h2>
     <h3>
       Age 
-      4
+      10
       .
     </h3>
     <p>
-      Gentle giant with eyes that will melt your soul.
+      When she's not busy being your admirer, Sadie likes to curl up and take a nap. Great with kids and other mellow pets!
     </p>
   </div>
+  <a
+    href="/dogs/6/edit"
+  >
+    <button>
+      Edit
+    </button>
+  </a>
+  <button>
+    Delete
+  </button>
 </div>
 `;

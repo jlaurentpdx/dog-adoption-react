@@ -7,129 +7,17 @@ exports[`DogList renders a list of dogs 1`] = `
   >
     <a
       class="dog-link"
-      href="/dogs/10"
+      href="/dogs/1"
     >
       <div>
         <p>
           meet
         </p>
         <h1>
-          Barton
+          Barkley
         </h1>
         <img
-          src="https://placedog.net/500?id=6"
-        />
-      </div>
-    </a>
-    <a
-      class="dog-link"
-      href="/dogs/21"
-    >
-      <div>
-        <p>
-          meet
-        </p>
-        <h1>
-          Olive
-        </h1>
-        <img
-          src=""
-        />
-      </div>
-    </a>
-    <a
-      class="dog-link"
-      href="/dogs/11"
-    >
-      <div>
-        <p>
-          meet
-        </p>
-        <h1>
-          Happy
-        </h1>
-        <img
-          src="https://placedog.net/500?id=21"
-        />
-      </div>
-    </a>
-    <a
-      class="dog-link"
-      href="/dogs/6"
-    >
-      <div>
-        <p>
-          meet
-        </p>
-        <h1>
-          Ronny Ron
-        </h1>
-        <img
-          src="https://images.pexels.com/photos/6246667/pexels-photo-6246667.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
-        />
-      </div>
-    </a>
-    <a
-      class="dog-link"
-      href="/dogs/14"
-    >
-      <div>
-        <p>
-          meet
-        </p>
-        <h1>
-          Eyes
-        </h1>
-        <img
-          src="https://placedog.net/500?id=22"
-        />
-      </div>
-    </a>
-    <a
-      class="dog-link"
-      href="/dogs/15"
-    >
-      <div>
-        <p>
-          meet
-        </p>
-        <h1>
-          Pugilicious
-        </h1>
-        <img
-          src="https://placedog.net/500?id=26"
-        />
-      </div>
-    </a>
-    <a
-      class="dog-link"
-      href="/dogs/5"
-    >
-      <div>
-        <p>
-          meet
-        </p>
-        <h1>
-          Melba
-        </h1>
-        <img
-          src="https://placedog.net/500?id=8"
-        />
-      </div>
-    </a>
-    <a
-      class="dog-link"
-      href="/dogs/9"
-    >
-      <div>
-        <p>
-          meet
-        </p>
-        <h1>
-          Liliana
-        </h1>
-        <img
-          src="https://placedog.net/500?id=5"
+          src="https://placedog.net/400/400/1"
         />
       </div>
     </a>
@@ -142,10 +30,10 @@ exports[`DogList renders a list of dogs 1`] = `
           meet
         </p>
         <h1>
-          Amely
+          Goldie
         </h1>
         <img
-          src="https://placedog.net/500?id=12"
+          src="https://placedog.net/400/400/2"
         />
       </div>
     </a>
@@ -158,10 +46,10 @@ exports[`DogList renders a list of dogs 1`] = `
           meet
         </p>
         <h1>
-          Althea
+          Beatrix
         </h1>
         <img
-          src="https://placedog.net/500?id=10"
+          src="https://placedog.net/400/400/3"
         />
       </div>
     </a>
@@ -174,26 +62,58 @@ exports[`DogList renders a list of dogs 1`] = `
           meet
         </p>
         <h1>
-          Franny
+          Jubilee
         </h1>
         <img
-          src="https://placedog.net/500?id=51"
+          src="https://placedog.net/400/400/4"
         />
       </div>
     </a>
     <a
       class="dog-link"
-      href="/dogs/16"
+      href="/dogs/5"
     >
       <div>
         <p>
           meet
         </p>
         <h1>
-          Ginny
+          Luna
         </h1>
         <img
-          src="https://images.pexels.com/photos/5886866/pexels-photo-5886866.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+          src="https://placedog.net/400/400/5 "
+        />
+      </div>
+    </a>
+    <a
+      class="dog-link"
+      href="/dogs/6"
+    >
+      <div>
+        <p>
+          meet
+        </p>
+        <h1>
+          Sadie
+        </h1>
+        <img
+          src="https://placedog.net/400/400/6"
+        />
+      </div>
+    </a>
+    <a
+      class="dog-link"
+      href="/dogs/7"
+    >
+      <div>
+        <p>
+          meet
+        </p>
+        <h1>
+          Perry
+        </h1>
+        <img
+          src="https://placedog.net/400/400/7"
         />
       </div>
     </a>
@@ -206,26 +126,42 @@ exports[`DogList renders a list of dogs 1`] = `
           meet
         </p>
         <h1>
-          Eileen
+          Urso
         </h1>
         <img
-          src="https://placedog.net/500?id=4"
+          src="https://placedog.net/400/400/8"
         />
       </div>
     </a>
     <a
       class="dog-link"
-      href="/dogs/17"
+      href="/dogs/9"
     >
       <div>
         <p>
           meet
         </p>
         <h1>
-          Mrs. Weasley
+          Milo
         </h1>
         <img
-          src="https://placedog.net/1000/563?id=3"
+          src="https://placedog.net/400/400/9"
+        />
+      </div>
+    </a>
+    <a
+      class="dog-link"
+      href="/dogs/10"
+    >
+      <div>
+        <p>
+          meet
+        </p>
+        <h1>
+          Dutch
+        </h1>
+        <img
+          src="https://placedog.net/400/400/10"
         />
       </div>
     </a>

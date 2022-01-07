@@ -1,10 +1,13 @@
 import { useEffect, useState } from 'react';
-import { fetchDogById } from '../../services/dogs';
+import { fetchDogById, deleteDogById } from '../../services/dogs';
+import { Link, useHistory } from 'react-router-dom';
+import DisplayDetail from '../../components/DisplayDetail/DisplayDetail';
 
 import './DogDetail.css';
 
 export default function DogDetail(props) {
   const id = props.match.params.id;
+  const history = useHistory();
   const [loading, setLoading] = useState(true);
   const [dog, setDog] = useState([]);
 
@@ -17,16 +20,25 @@ export default function DogDetail(props) {
     fetchData();
   }, [id]);
 
+  const handleDelete = async (e) => {
+    try {
+      e.preventDefault();
+      await deleteDogById(id);
+      history.push('/');
+    } catch {
+      alert('something went wrong. please refresh the page and try again');
+    }
+  };
+
   if (loading) return <h1>...getting ready to introduce...</h1>;
+
   return (
-    <div className="dog-detail">
-      <h1>{dog.name}</h1>
-      <img src={dog.image} />
-      <h2>
-        Meet {dog.name}, the {dog.breed}
-      </h2>
-      <h3>Age {dog.age}.</h3>
-      <p>{dog.bio}</p>
-    </div>
+    <>
+      <DisplayDetail {...dog} />
+      <Link to={`/dogs/${dog.id}/edit`}>
+        <button>Edit</button>
+      </Link>
+      <button onClick={handleDelete}>Delete</button>
+    </>
   );
 }

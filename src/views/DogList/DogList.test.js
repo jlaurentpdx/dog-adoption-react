@@ -11,9 +11,9 @@ test('DogList renders a list of dogs', async () => {
 
   screen.getByText('...checking our list of furry friends...');
 
-  await screen.findByText('Barton');
-  await screen.findByText('Liliana');
-  await screen.findByText('Melba');
+  await screen.findByText('Barkley');
+  await screen.findByText('Goldie');
+  await screen.findByText('Beatrix');
 
   expect(container).toMatchSnapshot();
 });

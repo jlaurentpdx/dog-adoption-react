@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DogCreate should render an empty form 1`] = `
+<div>
+  <div>
+    <p>
+      New entry
+    </p>
+    <p />
+    <form>
+      <div
+        class="form-control"
+      >
+        <label>
+          Name: 
+        </label>
+        <input
+          placeholder="enter name"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="form-control"
+      >
+        <label>
+          Description: 
+        </label>
+        <textarea
+          placeholder="Who is this dog?"
+          type="text"
+        />
+      </div>
+      <div
+        class="form-control"
+      >
+        <label>
+          Age: 
+        </label>
+        <input
+          placeholder="enter age in years"
+          type="number"
+          value=""
+        />
+      </div>
+      <div
+        class="form-control"
+      >
+        <label>
+          Image: 
+        </label>
+        <input
+          placeholder="enter URL"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="form-control"
+      >
+        <label>
+          Breed: 
+        </label>
+        <input
+          placeholder="enter breed or mix"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="form-control"
+      >
+        <button>
+          Add
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;
